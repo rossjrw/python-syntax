@@ -2,6 +2,7 @@ Forked from vim-python/python syntax with a few changes:
 
 * `raise`,`assert` moved from pythonStatement to pythonException
 * `=` moved from pythonOperator to pythonStatement
+* `'single quote strings'` moved from pythonString to the new pythonSymbol, which extends Label
 
 Python syntax highlighting for Vim
 =========================================
