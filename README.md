@@ -1,3 +1,7 @@
+Forked from vim-python/python syntax with a few changes:
+
+* `raise`,`assert` moved to pythonException
+
 Python syntax highlighting for Vim
 =========================================
 
