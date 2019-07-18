@@ -101,7 +101,7 @@ endif
 "
 syn keyword pythonOperator      and in is not or
 if s:Enabled('g:python_highlight_operators')
-    syn match pythonOperator        '\(=\|!\|<\|>\)\@<==\|-\|+\|*\|@\|/\|%\|&\||\|^\|~\|<\|>\|!='
+    syn match pythonOperator        '\%(\(=\|!\|<\|>\)\@<=\)=\|-\|+\|*\|@\|/\|%\|&\||\|^\|~\|<\|>\|!='
     syn match pythonStatement       '\(=\|!\|<\|>\)\@<!='
 endif
 syn match pythonError           '[$?]\|\([-+@%&|^~]\)\1\{1,}\|\([=*/<>]\)\2\{2,}\|\([+@/%&|^~<>]\)\3\@![-+*@/%&|^~<>]\|\*\*[*@/%&|^<>]\|=[*@/%&|^<>]\|-[+*@/%&|^~<]\|[<!>]\+=\{2,}\|!\{2,}=\+' display
