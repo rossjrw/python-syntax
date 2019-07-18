@@ -128,8 +128,8 @@ endif
 syn keyword pythonOperator      and in is not or
 if s:Enabled('g:python_highlight_operators')
     let s:punc_re = '=\|-\|+\|*\|@\|/\|%\|&\||\|^\|\~\|<\|>\|!='
-    execute 'syn match pythonOperator' . s:punc_re
-    execute 'syn match pythonStatement (' . s:punc_re . ')\@<!=(' . s:punc_re . ')\@!'
+    execute 'syn match pythonOperator ''' . s:punc_re . ''''
+    execute 'syn match pythonStatement ''(' . s:punc_re . ')\@<!=(' . s:punc_re . ')\@!'''
     unlet s:punc_re
 endif
 syn match pythonError           '[$?]\|\([-+@%&|^~]\)\1\{1,}\|\([=*/<>]\)\2\{2,}\|\([+@/%&|^~<>]\)\3\@![-+*@/%&|^~<>]\|\*\*[*@/%&|^<>]\|=[*@/%&|^<>]\|-[+*@/%&|^~<]\|[<!>]\+=\{2,}\|!\{2,}=\+' display
