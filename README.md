@@ -1,6 +1,7 @@
 Forked from vim-python/python syntax with a few changes:
 
-* `raise`,`assert` moved to pythonException
+* `raise`,`assert` moved from pythonStatement to pythonException
+* `=` moved from pythonOperator to pythonStatement
 
 Python syntax highlighting for Vim
 =========================================
