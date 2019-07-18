@@ -99,8 +99,8 @@ endif
 "
 " Operators
 "
-syn keyword pythonOperator      and in is not or
 syn match   pythonStatement     '\(for \S\+ \)\@<=in\( \)\@='
+syn keyword pythonOperator      and in is not or
 if s:Enabled('g:python_highlight_operators')
     let s:punc_re = '=\|-\|+\|*\|@\|/\|%\|&\||\|^\|\~\|<\|>\|!='
     execute 'syn match pythonOperator ''' . s:punc_re . ''''
