@@ -62,15 +62,14 @@ endif
 " Keywords
 "
 
-syn keyword pythonStatement     break continue del return pass yield global assert lambda with
-syn keyword pythonStatement     raise nextgroup=pythonExClass skipwhite
+syn keyword pythonStatement     break continue del return pass yield global lambda with
 syn keyword pythonStatement     def class nextgroup=pythonFunction skipwhite
 if s:Enabled('g:python_highlight_class_vars')
   syn keyword pythonClassVar    self cls
 endif
 syn keyword pythonRepeat        for while
 syn keyword pythonConditional   if elif else
-syn keyword pythonException     try except finally
+syn keyword pythonException     try except finally assert raise
 " The standard pyrex.vim unconditionally removes the pythonInclude group, so
 " we provide a dummy group here to avoid crashing pyrex.vim.
 syn keyword pythonInclude       import
