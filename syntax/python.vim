@@ -62,20 +62,19 @@ endif
 " Keywords
 "
 
-syn keyword pythonStatement     break continue del return pass yield global lambda with
+syn keyword pythonStatement     del return pass yield global lambda with
 syn keyword pythonStatement     def class nextgroup=pythonFunction skipwhite
 if s:Enabled('g:python_highlight_class_vars')
   syn keyword pythonClassVar    self cls
 endif
-syn keyword pythonRepeat        for while
+syn keyword pythonRepeat        for while continue break
 syn keyword pythonConditional   if elif else
 syn keyword pythonException     try except finally assert raise
 " The standard pyrex.vim unconditionally removes the pythonInclude group, so
 " we provide a dummy group here to avoid crashing pyrex.vim.
 syn keyword pythonInclude       import
 syn keyword pythonImport        import
-syn match pythonRaiseFromStatement      '\<from\>'
-syn match pythonImport          '^\s*\zsfrom\>'
+syn match pythonImport          '^\s*from\ze.+import'
 
 
 if s:Python2Syntax()
