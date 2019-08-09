@@ -74,7 +74,7 @@ syn keyword pythonException     try except finally assert raise
 " we provide a dummy group here to avoid crashing pyrex.vim.
 syn keyword pythonInclude       import
 syn keyword pythonImport        import
-syn match pythonImport          '^\s*from\ze.\+import'
+syn match pythonImport          '^\s*from\(.*import\)\@='
 
 
 if s:Python2Syntax()
