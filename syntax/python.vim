@@ -73,8 +73,7 @@ syn keyword pythonException     try except finally assert raise
 " The standard pyrex.vim unconditionally removes the pythonInclude group, so
 " we provide a dummy group here to avoid crashing pyrex.vim.
 syn keyword pythonInclude       import
-syn keyword pythonImport        import
-syn match pythonImport          '^\s*from\(.*import\)\@='
+syn keyword pythonImport        import from
 
 
 if s:Python2Syntax()
