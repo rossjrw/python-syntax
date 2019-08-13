@@ -65,7 +65,7 @@ endif
 syn keyword pythonStatement     del return pass yield global lambda with
 syn keyword pythonStatement     def class nextgroup=pythonFunction skipwhite
 if s:Enabled('g:python_highlight_class_vars')
-  syn keyword pythonClassVar    self cls
+  syn keyword pythonClassVar    self cls this
 endif
 syn keyword pythonRepeat        for while continue break
 syn keyword pythonConditional   if elif else
